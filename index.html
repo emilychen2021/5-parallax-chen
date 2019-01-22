@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title tag -->
+        <title>Emily Chen</title>
+        <!-- character encoding -->
+        <meta charset="UTF-8">
+        <!-- makes it mobile friendly -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- w3.css -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- local w3.css <link rel="stylesheet" href="w3.css"> -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- meta description -->
+        <meta name="description" content="Learn more about ">
+    </head>
+    <body>
+
+        <!-- Nav -->
+        <div class="w3-top">
+            <div class="w3-bar" id="myNavbar">
+                <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <a href="#home" class="w3-bar-item w3-button">Home</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-plane"></i> Travel</a>
+                <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-music"></i> Music</a>
+                <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-swimmer"></i> Swim</a>
+            </div>
+
+            <!-- Nav on small screens -->
+            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Travel</a>
+                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Music</a>
+                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Swim</a>
+            </div>
+        </div>
+
+        <div class="bgimg-1">
+            <div class="caption">
+                <span class="border">EMILY CHEN</span>
+            </div>
+        </div>
+
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+            <h3 style="text-align:center;">Travel</h3>
+            <p>Parallax scrolling is a web site trend where the background content is moved at a different speed than the foreground content while scrolling. </p>
+        </div>
+
+        <div class="bgimg-2">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+            </div>
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+                <h3 style="text-align:center;">Music</h3>
+                <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+            </div>
+        </div>
+
+        <div class="bgimg-3">
+            <div class="caption">
+                <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SCROLL UP</span>
+            </div>
+        </div>
+
+        <div style="position:relative;">
+            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+                <h3 style="text-align:center;">Swim</h3>
+                <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
+            </div>
+        </div>
+
+        <div class="bgimg-4">
+            <div class="caption">
+                <span class="border">Contact me:</span>
+            </div>
+        </div>
+
+        <script src="js/nav.js"></script>
+
+    </body>
+</html>
