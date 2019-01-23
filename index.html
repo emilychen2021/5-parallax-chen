@@ -26,32 +26,60 @@
         <div class="w3-top">
             <div class="w3-bar w3-theme-l2 w3-left-align">
                 <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Home</a>
-                <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-plane w3-margin-right"></i>Travel</a>
-                <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-music w3-margin-right"></i>Music</a>
-                <a href="#achievements" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fas fa-swimmer w3-margin-right"></i>Swim</a>
+                <a href="#home" class="w3-bar-item w3-button w3-hover-white"><i class="fa fa-home w3-margin-right"></i>Home</a>
+                <a href="#travel" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-plane w3-margin-right"></i>Travel</a>
+                <a href="#music" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-music w3-margin-right"></i>Music</a>
+                <a href="#swim" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fas fa-swimmer w3-margin-right"></i>Swim</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white"><i class="fa fa-envelope w3-margin-right"></i>Contact</a>
             </div>
 
             <!-- Navbar on small screens -->
             <div id="navDemo" class="w3-bar-block w3-theme w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-plane w3-margin-right"></i>Travel</a>
-                <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-music w3-margin-right"></i>Music</a>
-                <a href="#achievements" class="w3-bar-item w3-button"><i class="fas fa-swimmer w3-margin-right"></i>Swim</a>
+                <a href="#travel" class="w3-bar-item w3-button"><i class="fa fa-plane w3-margin-right"></i>Travel</a>
+                <a href="#music" class="w3-bar-item w3-button"><i class="fa fa-music w3-margin-right"></i>Music</a>
+                <a href="#swim" class="w3-bar-item w3-button"><i class="fas fa-swimmer w3-margin-right"></i>Swim</a>
                 <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope w3-margin-right"></i>Contact</a>
             </div>
         </div>
 
 
-        <div class="bgimg-1">
+        <div class="bgimg-1" id="home">
             <div class="caption">
                 <span class="border w3-theme-d5">EMILY CHEN</span>
             </div>
         </div>
 
-        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+        <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;" class="w3-center" id="travel">
             <h3 style="text-align:center;">Travel</h3>
-            <p style="text-align:center;"> As someone who is interested in global history and culture, traveling is a major part of my life. Traveling internationally allows me to experience foreign traditions firsthand. I love learning about different country's lifestyles, </p>
+            <p style="text-align:center;"> As someone who is interested in global history and culture, traveling is a major part of my life. Traveling internationally allows me to experience foreign traditions firsthand. My passion for global relations is the reason why I am a member of my high school’s Model United Nations Club and vice president of the Amnesty International club. I am also part of my high school’s Global Pathways Program, where students learn to be more globally aware and participate in traveling and global service. I have traveled to China, many European countries, and many North American areas. Here’s a little information about my favorite places: </p>
+            <div class="w3-bar w3-theme-d5">
+                <button class="w3-bar-item w3-button w3-border" onclick="openPlace('France')">France</button>
+                <button class="w3-bar-item w3-button w3-border" onclick="openPlace('Italy')">Italy</button>
+                <button class="w3-bar-item w3-button w3-border" onclick="openPlace('China')">China</button>
+            </div>
+
+            <div class="w3-cell-row">
+                <div class="w3-cell w3-mobile">
+                    <div id="France" class="place">
+                        <img src="img/paris.jpg" class="w3-image" alt="A view of Paris and the Eiffel Tower during sunset from the Arc de Triomphe." style="width:25%">
+                        <h2>Leads and manages the Metropolitan Beaches Commission </h2>
+                        <p>for the Massachusetts Legislature. The MBC is charged with making findings and recommendations on how to improve the Boston Harbor Region’s public beaches in Lynn, Nahant, Revere, Winthrop, East Boston, South Boston, Dorchester, Quncy and Hull.  
+                        </p>
+                    </div>
+                </div>
+
+                <div id="Italy" class="place" style="display:none">
+                    <img src="img/events3.jpg" class="w3-image" alt="A fundraiser event held by the organization." style="width:57%">
+                    <h2>Hosts or sponsors more than 30 free events and programs</h2>
+                    <p>on the region’s public beaches from Nahant on the North Shore to Nantasket on the South Shore each summer. Since 2008, our Better Beaches program has raised and invested more than $205,000 in small grants to beaches friends groups in Lynn, Nahant, Revere, Winthrop, East Boston, South Boston, Dorchester, Quincy and Hull. They in turn have leveraged our funds with additional cash and in-kind support for a total investment of $1,020,722 to fund nearly 214 free events and programs.</p> 
+                </div>
+
+                <div id="China" class="place" style="display:none">
+                    <img src="img/kids.jpg" class="w3-image" alt="A youth group attending one of the educational programs." style="width:57%">
+                    <h2>Serves as the Boston Harbor Connection</h2>
+                    <p>for more than 100,000 underserved youth, teens and their families who have taken part in our free youth environmental education programs since we began them in 2002. These include All Access Boston Harbor, the Boston Harbor Explorers, and our free Marine Mammal Safaris and Treasures of Spectacle Island Cruises, which connected 18,123 underserved young people and their families to Boston Harbor and the Boston Harbor Islands in 2014.</p>
+                </div>
+            </div>
         </div>
 
         <div class="bgimg-2">
@@ -60,8 +88,8 @@
             </div>
         </div>
 
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div style="position:relative;" id="music">
+            <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
                 <h3 style="text-align:center;">Music</h3>
                 <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
             </div>
@@ -73,8 +101,8 @@
             </div>
         </div>
 
-        <div style="position:relative;">
-            <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+        <div style="position:relative;" id="swim">
+            <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
                 <h3 style="text-align:center;">Swim</h3>
                 <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
             </div>
@@ -82,22 +110,23 @@
 
         <div class="bgimg-4">
             <div class="caption">
-                <span class="border w3-theme-d5">Contact me:</span>
+                <span class="border w3-theme-d5">Random Words</span>
             </div>
         </div>
 
         <footer class="w3-center w3-theme-d5 w3-padding w3-opacity">
-            <div class="w3-large w3-section">
-                <p><i class="fa fa-facebook-official w3-hover-opacity w3-padding"></i> Emily Chen</p>
-                <p><i class="fa fa-instagram w3-hover-opacity w3-padding"></i> @emiilychen</p>
-                <p><i class="fa fa-linkedin w3-hover-opacity w3-padding"></i> Emily Chen</p>
-                <p><i class="fa fa-spotify w3-hover-opacity w3-padding"></i> Emily Chen</p>
-                <p><i class="fa fa-snapchat w3-hover-opacity w3-padding"></i> @emilychn</p>
-                <p><a href="mailto:echen2021@gmail.com"><i class="fa fa-envelope w3-hover-opacity w3-padding"></i>echen2021@gmail.com</a></p>
+            <div class="w3-section" id="contact">
+                <p><a href="https://www.facebook.com/profile.php?id=100023727661963" target="blank"><i class="fa fa-facebook-official w3-hover-opacity w3-padding w3-button"></i>Emily Chen</a></p>
+                <p><a href="https://www.instagram.com/emiilychen" target="blank"><i class="fa fa-instagram w3-hover-opacity w3-padding w3-button"></i>@emiilychen</a></p>
+                <p><a href="https://www.linkedin.com/in/emily-chen-5288a9169/" target="blank"><i class="fa fa-linkedin w3-hover-opacity w3-padding w3-button"></i>Emily Chen</a></p>
+                <p><a href="https://open.spotify.com/user/emilychen40958?si=PGOxZiSeR96aFr54uHuOZg" target="blank"><i class="fa fa-spotify w3-hover-opacity w3-padding w3-button"></i>@emilychen40958</a></p>
+                <p><a href="https://www.snapchat.com/add/emilychn" target="blank"><i class="fa fa-snapchat w3-hover-opacity w3-padding w3-button"></i>@emilychn</a></p>
+                <p><a href="mailto:echen2021@gmail.com" target="blank"><i class="fa fa-envelope w3-hover-opacity w3-padding w3-button"></i>echen2021@gmail.com</a></p>
             </div>
         </footer>
 
         <script src="js/nav.js"></script>
+        <script src="js/tab.js"></script>
 
     </body>
 </html>
